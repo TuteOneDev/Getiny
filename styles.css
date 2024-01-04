@@ -1,0 +1,92 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 2em;
+}
+
+input[type="text"] {
+    background-color: black;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 400px;
+    color: white;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-size: 1em;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.06);
+    display: block;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.3s;
+}
+
+input[type="text"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.19);
+}
+
+::selection {
+    background-color: #b8feb4;
+    color: black;
+}
+
+input[type="text"]::placeholder {
+    color: rgba(255, 255, 255);
+    font-size: 0.8em;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 15px 30px;
+    background-color: #b8feb4;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.06);
+    transition: all 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.19);
+}
+
+h1 span.keyword {
+    text-decoration-line: underline;
+    text-decoration-color: #b8feb4;
+    text-decoration-thickness: 15%;
+    -webkit-text-underline-position: under;
+    -ms-text-underline-position: below;
+    text-underline-position: above;
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 7em;
+    }
+
+    input[type="text"] {
+		height: 80px;
+		max-width: 80%;
+		font-size: xx-large;
+    }
+	button {
+		height: 80px;
+		max-width: 60%;
+		margin-top: 50px;
+		font-size: xx-large;
+	}
+}
